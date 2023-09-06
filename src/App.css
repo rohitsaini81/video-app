@@ -1,0 +1,120 @@
+#root {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo {
+  color: white;
+  transition: all 0.2s ease;  
+  list-style: none;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo_hw{
+  height: 20px;
+  width: 10px;
+}
+.logo_hw img{
+  object-fit: cover;
+  height: 40px;
+  width: 40px
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  }
+
+.logo:hover {
+  transform: scale(1.1);
+  color: #ffffff56;
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+.card {
+  width: 100%;
+  margin: 50px 0;
+}
+.RED{
+  color: #ff1d1d9c;
+}
+.navbar{
+  margin:20px 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.react-player > video{
+  width: 100% !important;
+  height:100% !important;
+  border: solid #000000aa;
+}
+.bg{
+  background-color: #000000aa;
+  color: #ffffff;
+
+}
+.mt{
+  margin-top: 1em;
+}
+.btn{
+  background-color: #fb6161aa;
+  color: #ffffff;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.btn.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.mb{
+  margin-bottom: 1em;
+}
+.boxsize{
+  height: 40vh;
+  width: 30vw;
+  box-shadow: 0 0 1em #000000aa;
+  border: #ffffffaa solid 1px;
+}
+.ml{
+  margin-left: 1em;
+}
+
+@media screen and (max-width: 600px) {
+
+  .boxsize{
+    margin-bottom: 8rem;
+    height: 50vh;
+    width: 80vw;
+  }
+  .card{
+    flex-direction: column;
+width: 100%;
+  }
+}
+
+.footerr{
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  padding: 10px;
+}
